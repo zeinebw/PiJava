@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="CLOSE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.FXMLVoyageController">
+    <children>
+      <TableView fx:id="table" layoutX="179.0" layoutY="121.0" prefHeight="280.0" prefWidth="560.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="121.0">
+        <columns>
+         <TableColumn fx:id="id" prefWidth="35.20001220703125" text="ID" />
+            <TableColumn fx:id="destination" prefWidth="75.0" text="Destination" />
+            <TableColumn fx:id="description" prefWidth="78.0" text="Description" />
+           
+            <TableColumn fx:id="img" prefWidth="106.0" text="Image" />
+            <TableColumn fx:id="date_debut" prefWidth="69.0" text="Date début" />
+            <TableColumn fx:id="date_fin" minWidth="4.0" prefWidth="62.0" text="Date fin" />
+            <TableColumn fx:id="prix" minWidth="8.0" prefWidth="46.0" text="Prix" />
+            <TableColumn fx:id="promotion" minWidth="0.0" prefWidth="84.0" text="Promotion" />
+            <TableColumn fx:id="nb_place_dispo" prefWidth="82.0" text="Nb places disponibles" />
+             <TableColumn fx:id="id_agence_id" prefWidth="87.0" text="Id agence" />
+            <TableColumn fx:id="id_vol_dep_id" text="Id vol départ" />
+            <TableColumn fx:id="id_vol_arrive_id" prefWidth="88.0" text="Id vol arrivée" /> 
+        </columns>
+      </TableView>
+      <Text fill="#2b3386" layoutX="33.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voyages détails" wrappingWidth="238.02224731445312">
+         <font>
+            <Font name="Bauhaus 93" size="27.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="648.0" layoutY="14.0" prefHeight="26.0" prefWidth="28.0">
+         <children>
+            <Group />
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="58.0" prefHeight="58.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#090354" glyphName="REFRESH" onMouseClicked="#refresh" size="25" wrappingWidth="27.428571701049805" />
+                        <Pane prefHeight="58.0" prefWidth="32.0" />
+                        <FontAwesomeIconView fill="#22c938" glyphName="PLUS_SQUARE" onMouseClicked="#ajouterVoyage" size="25" text="" wrappingWidth="22.64285659790039" />
+                        <AnchorPane prefHeight="58.0" prefWidth="37.0" />
+                        <FontAwesomeIconView fill="#e17c1d" glyphName="EDIT" onMouseClicked="#modifierVoyage1" size="25" />
+                        <BorderPane prefHeight="58.0" prefWidth="30.0" />
+                        <FontAwesomeIconView fill="#ae3737" glyphName="TRASH" onMouseClicked="#supprimerVoyage" size="25" />
+                     </children></HBox>
+               </children></HBox>
+         </children>
+      </HBox>
+      <FontAwesomeIconView fill="#172361" glyphName="CLOSE" layoutX="640.0" layoutY="34.0" onMouseClicked="#fxClose" size="20" />
+   </children> 
+</AnchorPane>

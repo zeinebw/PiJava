@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="912.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="120.0" prefHeight="472.0" prefWidth="200.0" style="-fx-background-color: E9E9E9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="743.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="45.0" prefHeight="26.0" prefWidth="139.0" text="Accueil" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="45.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="75.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="105.0" onMouseClicked="#afficheVoyage" prefHeight="26.0" prefWidth="139.0" text="Voyages" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="105.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LOCAL_AIRPORT" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="135.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="135.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="165.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="165.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FLIGHT_TAKEOFF" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="195.0" onMouseClicked="#publicationsListe" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="195.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LINUX" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="225.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="225.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PAPER_PLANE_ALT" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="255.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="255.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="285.0" prefHeight="26.0" prefWidth="139.0" text="Commentaires" AnchorPane.topAnchor="285.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="345.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="345.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="315.0" prefHeight="26.0" prefWidth="139.0" text="Publications" AnchorPane.topAnchor="315.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="14" />
+               </graphic>
+            </JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="12.0" text="Clicki Tsefer" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Bauhaus 93" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="200.0" layoutY="68.0" prefHeight="456.0" prefWidth="743.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fx:id="imgViewV" fitHeight="120.0" fitWidth="943.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="7.0" layoutY="13.0" prefHeight="75.0" prefWidth="209.0" text="Clicki Tsefer" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Bauhaus 93" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

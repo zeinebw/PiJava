@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.FXMLUpdateVoyageController">
+   <children>
+      <Text fill="#172361" layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier voyage">
+         <font>
+            <Font name="Bauhaus 93" size="33.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="52.0" prefHeight="56.0" prefWidth="287.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Destination">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxDestination" prefHeight="25.0" prefWidth="141.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="35.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="289.0" layoutY="54.0" prefHeight="56.0" prefWidth="287.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nb places disponibles">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxNbPlaceDispo" prefHeight="25.0" prefWidth="141.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="35.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="17.0" layoutY="111.0" prefHeight="57.0" prefWidth="574.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextArea fx:id="fxDescription" prefHeight="56.0" prefWidth="438.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="24.0" layoutY="168.0" prefHeight="98.0" prefWidth="243.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Img">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fx:id="imageView" fitHeight="92.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+            <FontAwesomeIconView glyphName="UPLOAD" size="14" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="307.0" layoutY="160.0" prefHeight="57.0" prefWidth="307.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxPrix" prefHeight="25.0" prefWidth="141.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="304.0" layoutY="200.0" prefHeight="57.0" prefWidth="296.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Promotion">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxPromotion" prefHeight="25.0" prefWidth="141.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="24.0" layoutY="257.0" prefHeight="57.0" prefWidth="287.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date début">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="fxDateDebut" prefHeight="22.0" prefWidth="178.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="309.0" layoutY="257.0" prefHeight="57.0" prefWidth="287.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date fin">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="fxDateFin" prefHeight="22.0" prefWidth="178.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="28.0" layoutY="302.0" prefHeight="56.0" prefWidth="230.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id agence">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxIdAgence" prefHeight="25.0" prefWidth="102.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="211.0" layoutY="303.0" prefHeight="55.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id vol départ">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxIdVolDepart" prefHeight="25.0" prefWidth="102.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="396.0" layoutY="302.0" prefHeight="56.0" prefWidth="230.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id vol arrivée">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="fxIdVolArrive" prefHeight="25.0" prefWidth="93.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="224.0" layoutY="355.0" />
+      <Button layoutX="227.0" layoutY="358.0" mnemonicParsing="false" text="Modifier" textFill="#eba027">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="321.0" layoutY="359.0" mnemonicParsing="false" text="Annuler" textFill="#da4444">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="556.0" layoutY="14.0" mnemonicParsing="false" onAction="#ack" text="Back" textFill="#091461" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

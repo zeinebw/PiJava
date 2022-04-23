@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ScrollBar?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.FXMLAddVoyageController">
+    <children>
+        <ScrollBar layoutX="579.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="14.0" />
+      <VBox alignment="TOP_CENTER" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#172361" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter voyage">
+                     <font>
+                        <Font name="Bauhaus 93" size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Destination">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxDestination" prefHeight="32.0" prefWidth="330.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="35.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextArea fx:id="fxDescription" prefHeight="23.0" prefWidth="474.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Img">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxImg" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <FontAwesomeIconView glyphName="UPLOAD" onMouseClicked="#AjouterImage" size="14" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="375.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date début">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <DatePicker prefHeight="22.0" prefWidth="178.0" />
+                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date fin">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <DatePicker />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxPrix" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Promotion">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxPromotion" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nb places disponibles">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxNbPlaceDispo" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id agence">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxIdAgence" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <JFXButton onMouseClicked="#AjouterVoyage" text="Ajouter">
+                     <font>
+                        <Font name="Berlin Sans FB" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id vol départ">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxIdVolDepart" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id vol arrivée">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="fxIdVolArrive" prefHeight="30.0" prefWidth="338.0">
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <JFXButton onMouseClicked="#fxAnnuler" text="Annuler">
+                     <font>
+                        <Font name="Berlin Sans FB" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
